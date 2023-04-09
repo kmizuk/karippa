@@ -17,7 +17,8 @@ document.getElementById('loan-form').addEventListener('submit', function (event)
         penalty: penalty
     });
 
-    const contractUrl = `${window.location.origin}${window.location.pathname}?${queryParams.toString()}`;
+    const contractUrl = `https://kmizuk.github.io/karippa/?${queryParams.toString()}`;
+
 
     document.getElementById('contract-url').innerText = `Contract URL: ${contractUrl}`;
 });
