@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>借りっぱ</title>
+</head>
+<body>
+    <div class="container">
+        <h1>借りっぱ</h1>
+        <form id="loan-form">
+            <div class="form-group">
+                <label for="lender">貸した人(匿名)</label>
+                <input type="text" id="lender" name="lender" required>
+            </div>
+            <div class="form-group">
+                <label for="borrower">借りた人（匿名）</label>
+                <input type="text" id="borrower" name="borrower" required>
+            </div>
+            <div class="form-group">
+                <label for="amount">金額(万円)</label>
+                <input type="number" id="amount" name="amount" required>
+            </div>
+            <div class="form-group">
+                <label for="due-date">いつまでに返す</label>
+                <input type="date" id="due-date" name="due-date" required>
+            </div>
+            <div class="form-group">
+                <label for="repayment-amount">いくら返す（万円）</label>
+                <input type="number" id="repayment-amount" name="repayment-amount" required>
+            </div>
+            <div class="form-group">
+                <label for="penalty">破った時のペナルティ</label>
+                <input type="text" id="penalty" name="penalty" required>
+            </div>
+            <button type="submit">契約URL</button>
+        </form>
+        <p id="contract-url"></p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
